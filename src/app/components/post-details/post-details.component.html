@@ -1,0 +1,22 @@
+<div class="mt-4">
+    <mat-card class="example-card">
+        <mat-card-title>Post Details <button routerLink="/" mat-button color="primary" style="float: right;">Back to Posts List</button>
+        </mat-card-title>
+        <mat-card-subtitle>
+            {{postDetailsData.title}}
+        </mat-card-subtitle>
+        <mat-card-content>
+            {{postDetailsData.body}}
+
+            <mat-list>
+                <mat-list-item *ngFor="let comment of postCommentsData"><img src="https://i.pravatar.cc/300" mat-card-avatar>{{comment.email}}<mat-divider></mat-divider>
+                    <mat-card-actions>
+                        <button mat-button>
+                            <mat-icon>thumb_up</mat-icon>
+                        </button>
+                    </mat-card-actions>
+                </mat-list-item>
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+</div>

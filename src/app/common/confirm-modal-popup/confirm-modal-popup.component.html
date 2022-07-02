@@ -1,0 +1,13 @@
+<div class="modal-header">
+    <span>{{ modalHeader }}</span>
+    <button type="button" class="close" aria-label="Close" (click)="closeModal(false)">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    {{ modalContent }}
+  </div>
+  <div class="modal-footer">
+  <button class="btn btn-success" nbButton status="default" (click)="OkModal(true)" nbTooltip="Ok">Ok</button> &nbsp; &nbsp;
+  <button class="btn btn-danger" nbButton status="danger" (click)="closeModal(false)" nbTooltip="Cancel">Cancel</button>
+  </div>

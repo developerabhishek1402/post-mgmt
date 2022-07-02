@@ -1,0 +1,22 @@
+
+
+.example-card {
+    max-width: 100%;
+    background-color: lightgrey;
+}
+
+mat-list-item{
+    font-size: 11px !important;
+}
+
+button{
+    margin-top: 35px;
+    font-size: 9px;
+}
+
+mat-icon{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+  
